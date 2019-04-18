@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Querellas</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="../assets/images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../assets/images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../assets/images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../assets/images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../assets/images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../assets/images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../assets/images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../assets/images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../assets/images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../assets/images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Favicon ENDs -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
+    <!-- Bootstrap Select -->
+    <link rel="stylesheet" href="../assets/css/bootstrap-select.min.css">
+
+    <!-- Bootstrap DatePicker -->
+    <link rel="stylesheet" href="../assets/css/bootstrap-datepicker.min.css">
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="../assets/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+
+<div class="main-wrapper container-fluid">
+    <!-- Header Start -->
+    <header class="de-header">
+        <div class="row">
+            <div class="container">
+                <div class="header-wrap">
+                    <div class="header-top">
+                        <div class="logo">
+                            <a href="index.html"><img src="../assets/images/de_logo.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-area">
+                <div class="banner-area">
+                    <div class="container vcenter">
+                        <div class="row">
+                            <div class="col-lg-7">
+                                <div class="banner-content">
+                                    <h1>Hola John,<br>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--.// Header ENDs -->
+
+    <!-- Main Start -->
+    <main class="de-main-content">
+        <div class="container">
+            <div class="row">
+                <!-- search filter -->
+                <div class="col-md-12">
+                    <h3 class="block-title">Criterios de Búsqueda</h3>
+                    <div class="de-search-filter">
+                        <form action="#" class="form-horizontal">
+                            <div class="form-group filter-fields">
+                                <div class="col-sm-6 col-md-4 field">
+                                    <label for="from-date">Desde</label>
+                                    <div class="input-group date from-date">
+                                        <input type="text" class="form-control" id="from-date" value="">
+                                        <div class="input-group-addon">
+                                            <i class="far fa-calendar-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4 field">
+                                    <label for="matter">Asunto</label>
+                                    <input type="text" class="form-control" id="matter" required>
+                                </div>
+                                <div class="col-sm-6 col-md-4 field">
+                                    <label for="record-number">Número de Querella</label>
+                                    <input type="text" class="form-control" id="record-number" required>
+                                </div>
+                                <div class="col-sm-6 col-md-4 field">
+                                    <label for="to-date">Hasta</label>
+                                    <div class="input-group date to-date">
+                                        <input type="text" class="form-control" id="to-date" value="">
+                                        <div class="input-group-addon">
+                                            <i class="far fa-calendar-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4 field">
+                                    <label for="judge-name">Juez</label>
+                                    <input type="text" class="form-control" id="judge-name" required>
+                                </div>
+                                <div class="col-sm-6 col-md-4 field">
+                                    <label for="required-derp">Requiere Cumplimiento DEPR</label>
+                                    <select id="required-derp" class="form-control select-filter derp">
+                                        <option value="">Cumplimiento 1</option>
+                                        <option value="">Cumplimiento 2</option>
+                                        <option value="">Cumplimiento 3</option>
+                                        <option value="">Cumplimiento 4</option>
+                                        <option value="">Cumplimiento 5</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    <div class="search-action">
+                                        <button class="btn btn-lg search-btn">Buscar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- search filter ENDs-->
+
+                <!--results table-->
+                <div class="col-md-12">
+                    <h3 class="block-title"> Reclamaciones de Querellas </h3>
+                    <div class="panel panel-default">
+                        <div class="de-results-table table-responsive">
+                            <table class="table table-striped table-hover">
+                                <thead>
+                                <tr>
+                                    <th>Querella #</th>
+                                    <th>Asunto (s)</th>
+                                    <th>Fecha</th>
+                                    <th>Juez</th>
+                                    <th>Requiere Cumplimiento DEPR</th>
+                                    <th>Archivo</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="order">1</td>
+                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing</td>
+                                    <td>11/04/2019</td>
+                                    <td>Nicolás R. González Almanzar</td>
+                                    <td>Si</td>
+                                    <td>
+                                        <a class="record-action" href="#">
+                                            Descargar <i class="fas fa-long-arrow-alt-down"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="order">1</td>
+                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing</td>
+                                    <td>11/04/2019</td>
+                                    <td>Nicolás R. González Almanzar</td>
+                                    <td>No</td>
+                                    <td>
+                                        <a class="record-action" href="#">
+                                            Descargar <i class="fas fa-long-arrow-alt-down"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="order">1</td>
+                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing</td>
+                                    <td>11/04/2019</td>
+                                    <td>Nicolás R. González Almanzar</td>
+                                    <td>Si</td>
+                                    <td>
+                                        <a class="record-action" href="#">
+                                            Descargar <i class="fas fa-long-arrow-alt-down"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="order">1</td>
+                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing</td>
+                                    <td>11/04/2019</td>
+                                    <td>Nicolás R. González Almanzar</td>
+                                    <td>No</td>
+                                    <td>
+                                        <a class="record-action" href="#">
+                                            Descargar <i class="fas fa-long-arrow-alt-down"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="order">1</td>
+                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing</td>
+                                    <td>11/04/2019</td>
+                                    <td>Nicolás R. González Almanzar</td>
+                                    <td>Si</td>
+                                    <td>
+                                        <a class="record-action" href="#">
+                                            Descargar <i class="fas fa-long-arrow-alt-down"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="order">1</td>
+                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing</td>
+                                    <td>11/04/2019</td>
+                                    <td>Nicolás R. González Almanzar</td>
+                                    <td>No</td>
+                                    <td>
+                                        <a class="record-action" href="#">
+                                            Descargar <i class="fas fa-long-arrow-alt-down"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="order">1</td>
+                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing</td>
+                                    <td>11/04/2019</td>
+                                    <td>Nicolás R. González Almanzar</td>
+                                    <td>Si</td>
+                                    <td>
+                                        <a class="record-action" href="#">
+                                            Descargar <i class="fas fa-long-arrow-alt-down"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="order">1</td>
+                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing</td>
+                                    <td>11/04/2019</td>
+                                    <td>Nicolás R. González Almanzar</td>
+                                    <td>No</td>
+                                    <td>
+                                        <a class="record-action" href="#">
+                                            Descargar <i class="fas fa-long-arrow-alt-down"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="order">1</td>
+                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing</td>
+                                    <td>11/04/2019</td>
+                                    <td>Nicolás R. González Almanzar</td>
+                                    <td>Si</td>
+                                    <td>
+                                        <a class="record-action" href="#">
+                                            Descargar <i class="fas fa-long-arrow-alt-down"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="order">1</td>
+                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing</td>
+                                    <td>11/04/2019</td>
+                                    <td>Nicolás R. González Almanzar</td>
+                                    <td>No</td>
+                                    <td>
+                                        <a class="record-action" href="#">
+                                            Descargar <i class="fas fa-long-arrow-alt-down"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="order">1</td>
+                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing</td>
+                                    <td>11/04/2019</td>
+                                    <td>Nicolás R. González Almanzar</td>
+                                    <td>Si</td>
+                                    <td>
+                                        <a class="record-action" href="#">
+                                            Descargar <i class="fas fa-long-arrow-alt-down"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="order">1</td>
+                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing</td>
+                                    <td>11/04/2019</td>
+                                    <td>Nicolás R. González Almanzar</td>
+                                    <td>No</td>
+                                    <td>
+                                        <a class="record-action" href="#">
+                                            Descargar <i class="fas fa-long-arrow-alt-down"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="order">1</td>
+                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing</td>
+                                    <td>11/04/2019</td>
+                                    <td>Nicolás R. González Almanzar</td>
+                                    <td>Si</td>
+                                    <td>
+                                        <a class="record-action" href="#">
+                                            Descargar <i class="fas fa-long-arrow-alt-down"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="order">1</td>
+                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing</td>
+                                    <td>11/04/2019</td>
+                                    <td>Nicolás R. González Almanzar</td>
+                                    <td>No</td>
+                                    <td>
+                                        <a class="record-action" href="#">
+                                            Descargar <i class="fas fa-long-arrow-alt-down"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="order">1</td>
+                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing</td>
+                                    <td>11/04/2019</td>
+                                    <td>Nicolás R. González Almanzar</td>
+                                    <td>Si</td>
+                                    <td>
+                                        <a class="record-action" href="#">
+                                            Descargar <i class="fas fa-long-arrow-alt-down"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="order">1</td>
+                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing</td>
+                                    <td>11/04/2019</td>
+                                    <td>Nicolás R. González Almanzar</td>
+                                    <td>No</td>
+                                    <td>
+                                        <a class="record-action" href="#">
+                                            Descargar <i class="fas fa-long-arrow-alt-down"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="order">1</td>
+                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing</td>
+                                    <td>11/04/2019</td>
+                                    <td>Nicolás R. González Almanzar</td>
+                                    <td>Si</td>
+                                    <td>
+                                        <a class="record-action" href="#">
+                                            Descargar <i class="fas fa-long-arrow-alt-down"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="order">1</td>
+                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing</td>
+                                    <td>11/04/2019</td>
+                                    <td>Nicolás R. González Almanzar</td>
+                                    <td>No</td>
+                                    <td>
+                                        <a class="record-action" href="#">
+                                            Descargar <i class="fas fa-long-arrow-alt-down"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="order">1</td>
+                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing</td>
+                                    <td>11/04/2019</td>
+                                    <td>Nicolás R. González Almanzar</td>
+                                    <td>Si</td>
+                                    <td>
+                                        <a class="record-action" href="#">
+                                            Descargar <i class="fas fa-long-arrow-alt-down"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="order">1</td>
+                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing</td>
+                                    <td>11/04/2019</td>
+                                    <td>Nicolás R. González Almanzar</td>
+                                    <td>No</td>
+                                    <td>
+                                        <a class="record-action" href="#">
+                                            Descargar <i class="fas fa-long-arrow-alt-down"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="table-paginator">
+                        <div class="pagination">
+                            <a href="#">
+                                <img src="../assets/images/ff-prev.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="../assets/images/prev.svg" alt="">
+                            </a>
+                            <a href="#" class="page-number">1</a>
+                            <a href="#" class="page-number active">2</a>
+                            <a href="#" class="page-number">3</a>
+                            <a href="#" class="page-number">4</a>
+                            <a href="#" class="page-number">5</a>
+                            <a href="#" class="page-number">6</a>
+                            <a href="#" class="page-number">7</a>
+                            <a href="#">
+                                <img src="../assets/images/next.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="../assets/images/ff-next.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--results table ENDs-->
+
+                <!--bottom logos-->
+                <div class="col-md-12">
+                    <div class="sponsors">
+                        <ul class="logos">
+                            <li>
+                                <a href="#">
+                                    <img src="../assets/images/ee_logo.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="../assets/images/siapee_logo.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="../assets/images/mipe_logo.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--bottom logos ENDs-->
+            </div>
+        </div>
+    </main>
+    <!--.// Main ENDs -->
+</div>
+
+<!-- jQuery -->
+<script src="../assets/js/jquery-3.3.1.min.js"></script>
+
+<!-- Bootstrap JavaScript -->
+<script src="../assets/js/bootstrap.min.js"></script>
+
+<!-- Bootstrap Select -->
+<script src="../assets/js/bootstrap-select.min.js"></script>
+
+<!-- Bootstrap DatePicker -->
+<script src="../assets/js/bootstrap-datepicker.min.js"></script>
+
+<!-- Customs Script -->
+<script src="../assets/js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "portal-vehiculos-pr",
+  "version": "1.0.0",
+  "description": "This is a series of forms for the directory of drive services P.R.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slipnox/portal-vehiculos-pr.git"
+  },
+  "author": "Abrahan Silverio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/slipnox/portal-vehiculos-pr/issues"
+  },
+  "homepage": "https://github.com/slipnox/portal-vehiculos-pr#readme",
+  "devDependencies": {
+    "laravel-mix": "^4.0.15"
+  }
+}
