@@ -22,13 +22,13 @@ function setHtmlFilesPlugins (files) {
     filename: 'index.html',
     template: 'src/index.html',
     minify: {
-      collapseWhitespace: true,
+      collapseWhitespace: false,
       removeComments: false,
-      removeRedundantAttributes: true,
-      removeScriptTypeAttributes: true,
-      removeStyleLinkTypeAttributes: true,
-      removeEmptyElements: true,
-      useShortDoctype: true
+      removeRedundantAttributes: false,
+      removeScriptTypeAttributes: false,
+      removeStyleLinkTypeAttributes: false,
+      removeEmptyElements: false,
+      useShortDoctype: false
     },
     inject: false
   }
