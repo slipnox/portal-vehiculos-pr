@@ -5,14 +5,175 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>traspaso-1.html</title>
+    <title>Traspaso 1</title>
 
     <!-- Styles -->
+    <link rel="stylesheet" href="css/libs.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<h1>traspaso-1.html</h1>
+<!-- Main Content -->
+<main class="pv-container">
+    <div class="container no-padding">
+        <!-- section form -->
+        <form class="form-inline" action="#">
+            <!-- Transfer By Section -->
+            <section class="section transfer-via">
+                <!-- section title -->
+                <div class="section__title">
+                    <h6>Realizar Traspaso por</h6>
+                </div>
+                <!-- section content -->
+                <div class="section__content">
+                    <div class="row display-flex align-items-stretch">
+                        <div class="col-md-7 left-column">
+                            <div class="section__field field">
+                                <span class="input-name">Realizar búsqueda de vehículo por:</span>
+                                <label class="select select-xxs" for="transfer-search">
+                                    <select id="transfer-search">
+                                        <option>Seleccione</option>
+                                        <option value="1">Tablilla</option>
+                                        <option value="2">Tablilla</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div class="section__field field">
+                                <span class="input-name">Tipo de traspaso:</span>
+                                <label class="select select-xxs" for="transfer-type">
+                                    <select id="transfer-type">
+                                        <option>Seleccione</option>
+                                        <option value="1">Cuenta</option>
+                                        <option value="2">Cuenta</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div class="section__field field margin-top-auto">
+                                <label for="sale-price" class="input-name">Precio de venta:</label>
+                                <input id="sale-price" class="input input-xxs" type="text" value="32,523.93">
+                            </div>
+                        </div>
+                        <div class="col-md-5 right-column">
+                            <div class="section__field field">
+                                <label for="board-id" class="input-name">El número de <strong>Tablilla</strong>:</label>
+                                <input id="board-id" class="input input-xxs" type="text" value="TBL002">
+                            </div>
+                            <div class="section__field field">
+                                <span class="input-name">Medio de compra:</span>
+                                <label class="select select-xxs" for="purchase-via">
+                                    <select id="purchase-via">
+                                        <option>Seleccione</option>
+                                        <option value="1">Financiado</option>
+                                        <option value="2">Financiado</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div class="section__field field align-items-top">
+                                <label for="board-id" class="input-name">Financiamiento por:</label>
+                                <div class="vertical-inputs">
+                                    <label class="control control-xxs radio">
+                                        <input id="plan-type-1" type="radio" name="plan-type">
+                                        <span class="control-indicator"></span>
+                                        <span class="control-label">Banco</span>
+                                    </label>
+                                    <label class="control control-xxs radio">
+                                        <input id="plan-type-2" type="radio" name="plan-type">
+                                        <span class="control-indicator"></span>
+                                        <span class="control-label">Cooperativa</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="section__field field">
+                                <label for="contract-number" class="input-name">Nùmero de contrato:</label>
+                                <input id="contract-number" class="input input-xxs" type="text" value="350356">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--./END section form -->
+            </section>
+            <!-- ./END Transfer By Section -->
+
+            <!-- Transfer Includes Section -->
+            <section class="section transfer-includes">
+                <!-- section title -->
+                <div class="section__title">
+                    <h6>Este Traspaso Incluye la Siguiente Información</h6>
+                </div>
+                <!-- section content -->
+                <div class="section__content">
+                    <div class="row display-flex align-items-stretch">
+                        <div class="col-md-8 left-column">
+                            <div class="section__field field">
+                                <span class="input-name">¿Cuantas líneas de traspaso tiene la transacción?</span>
+                                <label class="select select-xxs" for="transfer-quantity">
+                                    <select id="transfer-quantity">
+                                        <option>Seleccione</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div class="section__field field">
+                                <label for="board-id" class="input-name">¿Desea Duplicado de Licencia?</label>
+                                <div class="horizontal-inputs">
+                                    <label for="licence-copy-1" class="control control-xxs radio">
+                                        <input id="licence-copy-1" type="radio" name="licence-copy">
+                                        <span class="control-indicator"></span>
+                                        <span class="control-label">Si</span>
+                                    </label>
+                                    <label for="licence-copy-2" class="control control-xxs radio margin-left-m">
+                                        <input id="licence-copy-2" type="radio" name="licence-copy">
+                                        <span class="control-indicator"></span>
+                                        <span class="control-label">No</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="section__field field">
+                                <label for="board-id" class="input-name">¿Desea Duplicado de Titulo?</label>
+                                <div class="horizontal-inputs">
+                                    <label for="title-copy-1" class="control control-xxs radio">
+                                        <input id="title-copy-1" type="radio" name="title-copy">
+                                        <span class="control-indicator"></span>
+                                        <span class="control-label">Si</span>
+                                    </label>
+                                    <label for="title-copy-2" class="control control-xxs radio margin-left-m">
+                                        <input id="title-copy-2" type="radio" name="title-copy">
+                                        <span class="control-indicator"></span>
+                                        <span class="control-label">No</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="section__field field">
+                                <label for="agree-date" class="input-name">Juramentado el:</label>
+                                <input id="agree-date" class="input input-xxs" type="text" value="00/00/00">
+                            </div>
+                        </div>
+                        <div class="col-md-4 right-column">
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ./END Transfer Includes -->
+
+            <!-- submit section -->
+            <section class="section submit-form">
+                <button type="submit" class="button button-grey button-xxs">Guardar</button>
+            </section>
+            <!-- ./END Submit -->
+        </form>
+        <!--./END form -->
+    </div>
+</main>
+<!-- ./END Main Content -->
+
+<!-- Libraries Script -->
+<script src="js/libs.js"></script>
 
 <!-- Custom Script -->
 <script src="js/script.js"></script>

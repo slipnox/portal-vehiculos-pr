@@ -1,0 +1,96 @@
+.pv-container {
+  background: #f1f1f1;
+  max-width: 976px;
+  margin: 150px auto;
+}
+.section {
+  padding: 0;
+}
+.section__title {
+  max-width: 100%;
+  background: #d8d8d8;
+  padding: 5px 15px;
+}
+.section__content {
+  padding: 30px 80px;
+}
+.section__field {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  margin: 0 0 12px 0;
+}
+.section__field .input-name {
+  font-size: 13px;
+  font-weight: 500;
+}
+.section__field .select,
+.section__field .vertical-inputs,
+.section__field .input {
+  width: 100%;
+  max-width: 195px;
+}
+.section__field > * {
+  flex: 1;
+  margin: 0;
+}
+.transfer-via .section__field .select,
+.transfer-via .section__field .vertical-inputs,
+.transfer-via .section__field .input {
+  min-width: 195px;
+}
+.section__field.align-items-top {
+  align-items: flex-start;
+}
+.vertical-inputs {
+  padding-top: 3px;
+}
+.left-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.left-column > * {
+  width: 100%;
+}
+.margin-top-auto {
+  margin: auto 0 0 0;
+}
+.horizontal-inputs {
+  display: flex;
+  align-items: baseline;
+  max-width: 195px;
+  justify-content: flex-start;
+}
+.submit-form {
+  text-align: center;
+}
+.submit-form button {
+  width: 150px;
+  margin: 15px 0 30px 0;
+}
+.select-xxs select,
+select.select-xxs {
+  font-size: 12px;
+}
+.control input[type=checkbox]:checked~.control-indicator,
+.control input[type=radio]:checked~.control-indicator {
+  background: #fff;
+  border: 1px solid #93b5e3;
+}
+.control.radio input[type=radio]:checked~.control-indicator:before {
+  background: #a2c8e5;
+  background: radial-gradient(ellipse at center, #a2c8e5 5%, #6bb0e5 100%);
+}
+.button-grey {
+  color: #353535;
+  background: #d8d8d8;
+  border-color: #d8d8d8;
+}
+.button-grey:active,
+.button-grey:focus,
+.button-grey:hover {
+  color: #fff;
+  background: #353535;
+  border-color: #d8d8d8;
+}
