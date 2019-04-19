@@ -1,8 +1,7 @@
 let mix = require('laravel-mix')
 let HtmlWebpackPlugin = require('html-webpack-plugin')
-let HtmlBeautifyPlugin = require('html-beautify-webpack-plugin');
+let HtmlBeautifyPlugin = require('html-beautify-webpack-plugin')
 let fileGenerator = require('./modules/file-generator')
-
 
 //Disable Mix Manifest
 Mix.manifest.refresh = _ => void 0
@@ -14,11 +13,10 @@ let files = [
   'traspaso-6',
 ]
 
-
 // check generate files and set watchers
 fileGenerator(files)
 
-function setHtmlFilesPlugins(files) {
+function setHtmlFilesPlugins (files) {
   let webPackPlugins = []
   let options = {
     filename: 'index.html',
@@ -29,7 +27,7 @@ function setHtmlFilesPlugins(files) {
       removeRedundantAttributes: true,
       removeScriptTypeAttributes: true,
       removeStyleLinkTypeAttributes: true,
-      removeEmptyElements:true,
+      removeEmptyElements: true,
       useShortDoctype: true
     },
     inject: false
@@ -41,7 +39,6 @@ function setHtmlFilesPlugins(files) {
 
     options.filename = `${file}.html`
     options.template = `src/${file}.html`
-
 
     webPackPlugins.push(
       new HtmlWebpackPlugin(options)
