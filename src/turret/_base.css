@@ -62,8 +62,8 @@
    * Focus Outline
    */
 
-  --focus-outline: 0.125rem solid var(--info);
-  --focus-outline-offset: 0.125rem;
+  --focus-outline: none;
+  --focus-outline-offset: 0;
 
   /**
    * Container
@@ -115,7 +115,7 @@
    * Border Radius
    */
 
-  --border-radius: 0.25em;
+  --border-radius: 0;
 
   /**
    * Box Shadow
@@ -225,7 +225,7 @@
   --font-size-m: 1rem;
   --font-size-s: 0.875rem;
   --font-size-xs: 0.75rem;
-  --font-size-xxs: 0.625rem;
+  --font-size-xxs: 12px;
   --font-size: var(--font-size-m);
 
   /**

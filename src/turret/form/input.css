@@ -39,8 +39,8 @@ textarea {
 
   &:focus {
     color: var(--input-focus-color);
-    background: var(--input-focus-background);
-    border-color: var(--input-focus-border-color);
+    //background: var(--input-focus-background);
+    //border-color: var(--input-focus-border-color);
     box-shadow: var(--input-focus-box-shadow);
   }
 
