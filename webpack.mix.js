@@ -50,8 +50,6 @@ function setHtmlFilesPlugins(files) {
 
   webPackPlugins.push(new HtmlBeautifyPlugin())
 
-  console.log(webPackPlugins)
-
   return webPackPlugins
 }
 
