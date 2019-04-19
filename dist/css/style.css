@@ -26,6 +26,7 @@
 }
 .section__field .select,
 .section__field .vertical-inputs,
+.section__field .input-group,
 .section__field .input {
   width: 100%;
   max-width: 195px;
@@ -68,6 +69,10 @@
 .submit-form button {
   width: 150px;
   margin: 15px 0 30px 0;
+}
+.calendar-icon {
+  max-height: 28px;
+  padding: 3px 5px;
 }
 .select-xxs select,
 select.select-xxs {
