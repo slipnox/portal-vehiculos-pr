@@ -32,6 +32,7 @@
     "vue-template-compiler": "^2.6.10"
   },
   "dependencies": {
-    "cross-env": "^5.2.0"
+    "cross-env": "^5.2.0",
+    "turretcss": "^5.1.3"
   }
 }
