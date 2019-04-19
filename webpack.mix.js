@@ -22,13 +22,13 @@ function setHtmlFilesPlugins (files) {
     filename: 'index.html',
     template: 'src/index.html',
     minify: {
-      collapseWhitespace: true,
+      collapseWhitespace: false,
       removeComments: false,
-      removeRedundantAttributes: true,
-      removeScriptTypeAttributes: true,
-      removeStyleLinkTypeAttributes: true,
-      removeEmptyElements: true,
-      useShortDoctype: true
+      removeRedundantAttributes: false,
+      removeScriptTypeAttributes: false,
+      removeStyleLinkTypeAttributes: false,
+      removeEmptyElements: false,
+      useShortDoctype: false
     },
     inject: false
   }
@@ -64,8 +64,47 @@ function setHtmlFilesPlugins (files) {
 mix
   .setPublicPath('dist')
   .js('src/js/script.js', 'dist/js')
+
+  // combine js files
+  .combine([
+    'node_modules/jquery/dist/jquery.slim.min.js',
+    'node_modules/air-datepicker/dist/js/datepicker.min.js',
+    'node_modules/air-datepicker/dist/js/i18n/datepicker.es.js'
+  ], 'dist/js/libs.js')
+
+  //combine css files
+  .combine([
+    'node_modules/flexboxgrid/dist/flexboxgrid.min.css',
+    'src/css/turret.css',
+    'node_modules/air-datepicker/dist/css/datepicker.min.css'
+  ], 'dist/css/libs.css')
+
+  //copy image files
   .copy('src/images', 'dist/images')
+
+  // generate custom styles
   .stylus('src/styl/style.styl', 'dist/css')
+
+  //generate turret framework
+  .postCss('src/turret/turret.css', '../src/css', [
+    require('postcss-import'),
+    require('postcss-preset-env')({
+      stage: 1,
+      sourceMap: 'inline',
+      features: {
+        'color-mod-function': {
+          unresolved: 'warn'
+        },
+        'custom-properties': {
+          preserve: false
+        },
+        'nesting-rules': true
+      }
+    }),
+    require('cssnano')({
+      autoprefixer: false
+    })
+  ])
   .browserSync({
     host: 'localhost',
     open: 'external',

@@ -93,7 +93,12 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-
+(function ($) {
+  // swear agreement
+  $('#agree-date').datepicker({
+    language: 'es'
+  });
+})(jQuery);
 
 /***/ }),
 
@@ -108,15 +113,27 @@
 
 /***/ }),
 
+/***/ "./src/turret/turret.css":
+/*!*******************************!*\
+  !*** ./src/turret/turret.css ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ 0:
-/*!******************************************************!*\
-  !*** multi ./src/js/script.js ./src/styl/style.styl ***!
-  \******************************************************/
+/*!******************************************************************************!*\
+  !*** multi ./src/js/script.js ./src/styl/style.styl ./src/turret/turret.css ***!
+  \******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! /Users/sx/Projects/portal_vehiculos/html/src/js/script.js */"./src/js/script.js");
-module.exports = __webpack_require__(/*! /Users/sx/Projects/portal_vehiculos/html/src/styl/style.styl */"./src/styl/style.styl");
+__webpack_require__(/*! /Users/sx/Projects/portal_vehiculos/html/src/styl/style.styl */"./src/styl/style.styl");
+module.exports = __webpack_require__(/*! /Users/sx/Projects/portal_vehiculos/html/src/turret/turret.css */"./src/turret/turret.css");
 
 
 /***/ })
