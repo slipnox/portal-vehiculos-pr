@@ -66,6 +66,7 @@ mix
   .js('src/js/script.js', 'dist/js')
   .copy('src/images', 'dist/images')
   .stylus('src/styl/style.styl', 'dist/css')
+  .copy('./node_modules/turretcss/dist/turretcss.min.css', 'dist/css')
   .browserSync({
     host: 'localhost',
     open: 'external',
