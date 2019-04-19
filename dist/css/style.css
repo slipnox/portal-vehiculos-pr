@@ -4,22 +4,21 @@
   margin: 150px auto;
 }
 .section {
-  padding: 0 15px;
+  padding: 0;
 }
 .section__title {
-  width: 976px;
+  max-width: 100%;
   background: #d8d8d8;
-  margin-left: -15px;
   padding: 5px 15px;
 }
 .section__content {
-  padding: 30px 50px;
+  padding: 30px 80px;
 }
 .section__field {
   display: flex;
   flex-flow: row;
   align-items: center;
-  margin: 0 0 15px 0;
+  margin: 0 0 12px 0;
 }
 .section__field .input-name {
   font-size: 13px;
@@ -36,6 +35,7 @@
   margin: 0;
 }
 .transfer-via .section__field .select,
+.transfer-via .section__field .vertical-inputs,
 .transfer-via .section__field .input {
   min-width: 195px;
 }
@@ -67,7 +67,7 @@
 }
 .submit-form button {
   width: 150px;
-  margin: 30px 0;
+  margin: 15px 0 30px 0;
 }
 .select-xxs select,
 select.select-xxs {
