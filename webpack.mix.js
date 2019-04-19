@@ -65,8 +65,24 @@ mix
   .setPublicPath('dist')
   .js('src/js/script.js', 'dist/js')
   .copy('src/images', 'dist/images')
-  .stylus('src/styl/style.styl', 'dist/css')
-  .copy('./node_modules/turretcss/dist/turretcss.min.css', 'dist/css')
+  .postCss('src/turret/turret.css', 'dist/css', [
+    require('postcss-import'),
+    require('postcss-preset-env')({
+      stage: 1,
+      features: {
+        'color-mod-function': {
+          unresolved: 'warn'
+        },
+        'custom-properties': {
+          preserve: false
+        },
+        'nesting-rules': true
+      }
+    }),
+    require('cssnano')({
+      autoprefixer: false
+    })
+  ])
   .browserSync({
     host: 'localhost',
     open: 'external',
