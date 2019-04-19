@@ -1,0 +1,16 @@
+.select-xxs select,
+select.select-xxs
+  font-size 12px
+
+.control input[type=checkbox]:checked~.control-indicator,
+.control input[type=radio]:checked~.control-indicator {
+  background #fff
+  border 1px solid #93b5e3
+}
+
+.control.radio input[type=radio]:checked~.control-indicator:before {
+  background rgb(162,200,229);
+  background -moz-radial-gradient(center, ellipse cover, rgba(162,200,229,1) 5%, rgba(107,176,229,1) 100%)
+  background -webkit-radial-gradient(center, ellipse cover, rgba(162,200,229,1) 5%,rgba(107,176,229,1) 100%)
+  background radial-gradient(ellipse at center, rgba(162,200,229,1) 5%,rgba(107,176,229,1) 100%)
+}
