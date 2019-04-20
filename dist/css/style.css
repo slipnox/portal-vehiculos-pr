@@ -106,6 +106,9 @@
 .client-info .right-column .section__detail-box textarea {
   width: 100%;
 }
+.open-document:focus,
+.open-document:hover,
+.open-document,
 .find-licence:focus,
 .find-licence:hover,
 .find-licence {
@@ -208,6 +211,7 @@
 .fines-table td {
   width: 17.5%;
 }
+.documents-table th,
 .fines-table th {
   text-align: center;
 }
@@ -228,6 +232,54 @@
 }
 .f6 .transaction-info-table .center-column {
   width: 15%;
+}
+.history-table td,
+.documents-table td {
+  text-align: left;
+  padding: 2px 8px;
+}
+.history-table th,
+.documents-table th {
+  padding: 8px 8px;
+}
+.open-document:focus,
+.open-document:hover,
+.open-document {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+  margin: 0 auto;
+}
+.documents-table th {
+  width: auto;
+  font-weight: 500;
+}
+.f6 .documents-table .action-column {
+  width: 12%;
+}
+.history-table,
+.documents-table {
+  font-size: 12px;
+}
+.f6 .documents-table .document-link {
+  width: 100%;
+  text-align: center;
+  display: block;
+}
+.history-table .table-filter td {
+  border: none;
+  background: #f3f5f6;
+}
+.history-table th {
+  max-width: 16.6%;
+}
+.follow-up {
+  width: 13%;
+}
+.f6 .submit-form {
+  text-align: right;
 }
 .select-xxs select,
 select.select-xxs {
