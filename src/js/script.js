@@ -1,9 +1,10 @@
 (function ($){
 
   // swear agreement
-  $('#agree-date').datepicker({
-    language: 'es',
+  $('#agree-date, #birth-date').each(function (i, input){
+    $(input).datepicker({
+      language: 'es',
+    })
   })
-
 
 })(jQuery)
