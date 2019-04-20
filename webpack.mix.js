@@ -1,54 +1,19 @@
 let mix = require('laravel-mix')
-let HtmlWebpackPlugin = require('html-webpack-plugin')
-let HtmlBeautifyPlugin = require('html-beautify-webpack-plugin')
-let fileGenerator = require('./modules/sx-form-generator/file-generator')
+let SXFileGenerator = require('./modules/sx-form-generator/file-generator')
 
 //Disable Mix Manifest
 Mix.manifest.refresh = _ => void 0
 
-// set desired file names
-let files = [
-  'traspaso-1',
-  'traspaso-3',
-  'traspaso-6',
-]
-
-// check generate files and set watchers
-fileGenerator(files)
-
-function setHtmlFilesPlugins (files) {
-  let webPackPlugins = []
-  let options = {
-    filename: 'index.html',
-    template: 'src/index.html',
-    minify: {
-      collapseWhitespace: false,
-      removeComments: false,
-      removeRedundantAttributes: false,
-      removeScriptTypeAttributes: false,
-      removeStyleLinkTypeAttributes: false,
-      removeEmptyElements: false,
-      useShortDoctype: false
-    },
-    inject: false
-  }
-
-  webPackPlugins.push(new HtmlWebpackPlugin(options))
-
-  files.forEach(file => {
-
-    options.filename = `${file}.html`
-    options.template = `src/${file}.html`
-
-    webPackPlugins.push(
-      new HtmlWebpackPlugin(options)
-    )
-  })
-
-  webPackPlugins.push(new HtmlBeautifyPlugin())
-
-  return webPackPlugins
-}
+// set desired file names and set watchers for beatify watcher output
+let formFiles = new SXFileGenerator({
+  files: [
+    'traspaso-1',
+    'traspaso-3',
+    'traspaso-6',
+  ],
+  srcPath: 'src', //change this if your source file have another location
+  indexFileName: 'index' // to track and beautify you index file
+})
 
 /*
  |--------------------------------------------------------------------------
@@ -123,7 +88,7 @@ mix
     ]
   })
   .webpackConfig({
-    plugins: setHtmlFilesPlugins(files)
+    plugins: formFiles.getFilesToWatch()
   })
 
 // Full API
