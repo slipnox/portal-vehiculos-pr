@@ -35,6 +35,9 @@
   flex: 1;
   margin: 0;
 }
+.table-title {
+  font-weight: 600;
+}
 .section__edit-btn {
   max-width: 95px;
   margin-right: 100px;
@@ -122,62 +125,62 @@
   grid-gap: 1rem;
   grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
 }
-.transaction-rights-table,
-.transaction-rights-table td,
-.transaction-rights-table th,
-.dealer-info-table,
-.dealer-info-table td,
-.dealer-info-table th,
+.transaction-info-table,
+.transaction-info-table td,
+.transaction-info-table th,
+.details-info-table,
+.details-info-table td,
+.details-info-table th,
 .car-info,
 .car-info td,
 .car-info th {
   background: transparent;
   border: none;
 }
-.transaction-rights-table td,
-.transaction-rights-table th,
-.release-info-table td,
-.release-info-table th,
-.dealer-info-table td,
+.transaction-info-table td,
+.transaction-info-table th,
+.info-table-gray td,
+.info-table-gray th,
+.details-info-table td,
 .car-info td {
   width: 25%;
   padding: 5px 0;
   font-size: 13px;
 }
-.dealer-info-table td {
+.details-info-table td {
   vertical-align: top;
 }
-.transaction-rights-table {
+.transaction-info-table {
   max-width: 75%;
   margin: 0 auto;
 }
-.transaction-rights-table td,
-.transaction-rights-table th,
-.release-info-table td,
-.release-info-table th {
+.transaction-info-table td,
+.transaction-info-table th,
+.info-table-gray td,
+.info-table-gray th {
   padding: 8px;
 }
-.transaction-rights-table > tbody th,
-.release-info-table th {
+.transaction-info-table > tbody th,
+.info-table-gray th {
   font-weight: 500;
 }
-.transaction-rights-table th,
-.transaction-rights-table td,
-.release-info-table td {
+.transaction-info-table th,
+.transaction-info-table td,
+.info-table-gray td {
   text-align: center;
 }
-.transaction-rights-table > tbody td,
-.transaction-rights-table > tbody th {
+.transaction-info-table > tbody td,
+.transaction-info-table > tbody th {
   background: #fff;
   border: solid 1px #d8d8d8;
 }
-.transaction-rights-table > tbody th {
+.transaction-info-table > tbody th {
   background: #f8f9fa;
 }
-.transaction-rights-table tfoot {
+.transaction-info-table tfoot {
   font-weight: 500;
 }
-.transaction-rights-table td.transaction-total {
+.transaction-info-table td.transaction-total {
   text-align: right;
   text-transform: uppercase;
   line-height: 24px;
