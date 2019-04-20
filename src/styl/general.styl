@@ -108,11 +108,20 @@
   grid-template-columns: repeat(auto-fill,minmax(15rem,1fr))
 
 
-.dealer-info-table, .dealer-info-table td, .dealer-info-table th,
+.transaction-rights-table,
+.transaction-rights-table td,
+.transaction-rights-table th,
+.dealer-info-table,
+.dealer-info-table td,
+.dealer-info-table th,
 .car-info, .car-info td, .car-info th
   background transparent
   border none
 
+.transaction-rights-table td,
+.transaction-rights-table th,
+.release-info-table td,
+.release-info-table th,
 .dealer-info-table td,
 .car-info td
   width 25%
@@ -121,3 +130,36 @@
 
 .dealer-info-table td
   vertical-align top
+
+.transaction-rights-table
+  max-width 75%
+  margin 0 auto
+
+.transaction-rights-table td,
+.transaction-rights-table th,
+.release-info-table td,
+.release-info-table th
+  padding 8px
+
+.transaction-rights-table > tbody th,
+.release-info-table th
+  font-weight:500
+
+.transaction-rights-table th,
+.transaction-rights-table td,
+.release-info-table td
+  text-align center
+
+.transaction-rights-table > tbody td,
+.transaction-rights-table > tbody th
+  background #fff
+  border solid 1px #d8d8d8
+
+.transaction-rights-table > tbody th
+  background #f8f9fa
+
+.transaction-rights-table td.transaction-total
+  text-align right
+  font-weight 500
+  text-transform uppercase
+  line-height 24px
