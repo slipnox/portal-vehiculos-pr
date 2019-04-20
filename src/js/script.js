@@ -1,13 +1,13 @@
 (function ($){
 
-  // swear agreement
-  $('#agree-date, #birth-date').each((i, input) => {
+  // add datepicker for date inputs
+  $('.as-datepicker').each((i, input) => {
     $(input).datepicker({
       language: 'es',
     })
   })
 
-  // edit btn action
+  // edit name btn action callback
   $('.section__edit-btn').on('click', (e) => {
     $('#client-name').prop('disabled', false)
     $(e.target).prop('disabled', true)

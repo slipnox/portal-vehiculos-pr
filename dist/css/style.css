@@ -12,13 +12,13 @@
   padding: 5px 15px;
 }
 .section__content {
-  padding: 30px 80px;
+  padding: 30px 8%;
 }
 .section__field {
   display: flex;
   flex-flow: row;
   align-items: center;
-  margin: 0 0 12px 0;
+  margin: 0 0 10px 0;
 }
 .section__field .input-name {
   font-size: 13px;
@@ -92,6 +92,9 @@
   background: #fff;
   border: solid 1px #d8d8d8;
 }
+.section__detail-box .section__field {
+  margin-bottom: 4px;
+}
 .client-info .right-column .section__detail-box {
   flex: 1;
   width: 195px;
@@ -120,6 +123,10 @@
 #client-address {
   font-size: 12px;
 }
+.plane-input {
+  border: none;
+  border-bottom: solid 1px #ddd;
+}
 .boxes {
   display: grid;
   grid-gap: 1rem;
@@ -130,10 +137,7 @@
 .transaction-info-table th,
 .details-info-table,
 .details-info-table td,
-.details-info-table th,
-.car-info,
-.car-info td,
-.car-info th {
+.details-info-table th {
   background: transparent;
   border: none;
 }
@@ -141,11 +145,10 @@
 .transaction-info-table th,
 .info-table-gray td,
 .info-table-gray th,
-.details-info-table td,
-.car-info td {
+.details-info-table td {
   width: 25%;
   padding: 5px 0;
-  font-size: 13px;
+  font-size: 12px;
 }
 .details-info-table td {
   vertical-align: top;
@@ -184,6 +187,47 @@
   text-align: right;
   text-transform: uppercase;
   line-height: 24px;
+}
+.f6 .transaction-info .section__field {
+  margin-bottom: 6px;
+}
+.f6 .transaction-info .section__field .select,
+.f6 .transaction-info .section__field .vertical-inputs,
+.f6 .transaction-info .section__field .input {
+  min-width: 220px;
+}
+.current-assessments-table {
+  max-width: 70%;
+  margin: 0 auto;
+}
+.fines-table {
+  width: 85%;
+  margin: 0 auto;
+}
+.fines-table th,
+.fines-table td {
+  width: 17.5%;
+}
+.fines-table th {
+  text-align: center;
+}
+.fines-table .fine-description {
+  text-align: left;
+  width: 30%;
+}
+.f6 .transaction-info-table {
+  max-width: 100%;
+}
+.f6 .transaction-info-table td,
+.f6 .transaction-info-table th {
+  width: 10%;
+}
+.f6 .transaction-info-table .end-column,
+.f6 .transaction-info-table .start-column {
+  width: 20%;
+}
+.f6 .transaction-info-table .center-column {
+  width: 15%;
 }
 .select-xxs select,
 select.select-xxs {
