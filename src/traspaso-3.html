@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>traspaso-3.html</title>
+    <title>Traspaso 3</title>
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/libs.css">
@@ -13,7 +13,87 @@
 </head>
 <body>
 
-<h1>traspaso-3.html</h1>
+<!-- Main Content -->
+<main class="pv-container">
+    <div class="container no-padding">
+        <!-- section form -->
+        <form class="form-inline" action="#">
+            <!-- Owner Information Section -->
+            <section class="section client-info">
+                <!-- section title -->
+                <div class="section__title">
+                    <h6>Información del Nuevo Dueño Registral</h6>
+                </div>
+                <!-- section content -->
+                <div class="section__content">
+                    <div class="row display-flex align-items-stretch">
+                        <div class="col-md-7 left-column">
+                            <div class="section__field field">
+                                <span class="input-name">Realizar búsqueda de dueño por:</span>
+                                <label class="select select-xxs" for="licence-number">
+                                    <select id="licence-number">
+                                        <option>Seleccione</option>
+                                        <option value="1">Número Licencia</option>
+                                        <option value="2">Número Licencia</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div class="section__field field">
+                                <label for="client-name" class="input-name">Nombre:</label>
+                                <input id="client-name" disabled class="input input-xxs" type="text" value="Juan Del Pueblo Conocido">
+                            </div>
+                            <div class="section__field field">
+                                <label for="client-name" class="input-name"></label>
+                                <button class="button button-xxs section__edit-btn">Editar</button>
+                            </div>
+                            <div class="section__field field align-items-top">
+                                <span class="input-name">Detalles:</span>
+                                <div class="section__detail-box">
+                                    <div class="section__field field">
+                                        <label for="birth-date" class="input-name">Fecha Nacimiento:</label>
+                                        <input id="birth-date" class="input input-xxs" type="text" value="00/00/00">
+                                    </div>
+                                    <div class="section__field field">
+                                        <label for="cd-licence-number" class="input-name">Num Licencia:</label>
+                                        <input id="cd-licence-number" class="input input-xxs" type="text" value="451263">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5 right-column">
+                            <div class="section__field field">
+                                <label for="search-board-id" class="input-name">El número de <strong>Licencia</strong>:</label>
+                                <input id="search-board-id" class="input input-xxs" type="text" value="451263">
+                            </div>
+                            <div class="section__field field align-items-flex-start">
+                                <label for="client-address" class="input-name">Dirección Física:</label>
+                                <textarea class="" id="client-address" name="" cols="30" rows="2"></textarea>
+                            </div>
+                            <div class="section__field field align-items-flex-start">
+                                <label for="zip-address" class="input-name">Dirección Postal:</label>
+                                <textarea class="" id="zip-address" name="" cols="30" rows="2"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--./END section form -->
+            </section>
+            <!-- ./END Owner Information Section -->
+
+            <!-- submit section -->
+            <section class="section submit-form">
+                <button type="submit" class="button button-grey button-xxs">Guardar</button>
+            </section>
+            <!-- ./END Submit -->
+        </form>
+        <!--./END form -->
+    </div>
+</main>
+<!-- ./END Main Content -->
+
+<!-- Libraries Script -->
+<script src="js/libs.js"></script>
 
 <!-- Custom Script -->
 <script src="js/script.js"></script>
