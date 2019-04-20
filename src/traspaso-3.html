@@ -51,11 +51,15 @@
                                 <div class="section__detail-box">
                                     <div class="section__field field">
                                         <label for="birth-date" class="input-name">Fecha Nacimiento:</label>
-                                        <input id="birth-date" class="input input-xxs" type="text" value="00/00/00">
+                                        <input id="birth-date" class="input input-xxs plane-input as-datepicker" type="text" value="00/00/00">
                                     </div>
                                     <div class="section__field field">
                                         <label for="cd-licence-number" class="input-name">Num Licencia:</label>
-                                        <input id="cd-licence-number" class="input input-xxs" type="text" value="451263">
+                                        <input id="cd-licence-number" class="input input-xxs plane-input" type="text" value="451263">
+                                    </div>
+                                    <div class="section__field field">
+                                        <label for="client-phone" class="input-name">Teléfono:</label>
+                                        <input id="client-phone" class="input input-xxs plane-input" type="text" value="">
                                     </div>
                                 </div>
                             </div>
@@ -109,7 +113,6 @@
                         <div class="col-md-6 right-column">
                         </div>
                     </div>
-
                 </div>
             </section>
             <!-- ./END Dealer Information Section -->
@@ -122,7 +125,7 @@
                 </div>
                 <!-- section content -->
                 <div class="section__content">
-                    <table class="car-info">
+                    <table class="details-info-table">
                         <tbody>
                         <tr>
                             <td><strong>VIN:</strong></td>
@@ -180,7 +183,7 @@
                 </div>
                 <!-- section content -->
                 <div class="section__content">
-                    <table class="dealer-info-table">
+                    <table class="details-info-table">
                         <tbody>
                         <tr>
                             <td><strong>Nombre:</strong></td>
@@ -206,7 +209,7 @@
             </section>
             <!-- ./END Current Owner Information Section -->
 
-            <!-- Release Conditions Section -->
+            <!-- Assessment Conditions Section -->
             <section class="section release-info">
                 <!-- section title -->
                 <div class="section__title">
@@ -214,7 +217,7 @@
                 </div>
                 <!-- section content -->
                 <div class="section__content">
-                    <table class="release-info-table">
+                    <table class="info-table-gray">
                         <tr>
                             <th scope="col">Gravamen</th>
                             <th scope="col">Institución / Acreedor</th>
@@ -232,7 +235,7 @@
                     </table>
                 </div>
             </section>
-            <!-- ./END Release Conditions Section -->
+            <!-- ./END Assessment Conditions Section -->
 
             <!-- Transaction Rights Section -->
             <section class="section transaction-rights-info">
@@ -242,7 +245,7 @@
                 </div>
                 <!-- section content -->
                 <div class="section__content">
-                    <table class="transaction-rights-table">
+                    <table class="transaction-info-table">
                         <tr>
                             <th scope="col">Cantidad</th>
                             <th scope="col">Tipo Concepto</th>
@@ -262,15 +265,15 @@
                             <td>18/abr/2019 09:48 am</td>
                             <td>$ 2.00</td>
                         </tr>
+                        </tbody>
                         <tfoot>
                         <tr>
                             <td></td>
                             <td></td>
                             <td class="transaction-total">Total</td>
-                            <td>$180</td>
+                            <td>$13</td>
                         </tr>
                         </tfoot>
-                        </tbody>
                     </table>
                 </div>
             </section>

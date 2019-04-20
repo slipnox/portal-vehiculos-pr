@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>traspaso-6.html</title>
+        <title>Traspado 6</title>
 
         <!-- Styles -->
         <link rel="stylesheet" href="css/libs.css">
@@ -14,7 +14,523 @@
 
     <body>
 
-        <h1>traspaso-6.html</h1>
+        <!-- Main Content -->
+        <main class="pv-container f6">
+            <div class="container no-padding">
+                <!-- section form -->
+                <form class="form-inline" action="#">
+                    <!-- Creditor Info Section -->
+                    <section class="section current-owner-info">
+                        <!-- section title -->
+                        <div class="section__title">
+                            <h6>Información del Acreedor</h6>
+                        </div>
+                        <!-- section content -->
+                        <div class="section__content">
+                            <table class="details-info-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="table-title">Nombre:</td>
+                                        <td>Popular Auto Inc</td>
+                                        <td class="table-title">Número Identificador:</td>
+                                        <td>CE-2017-374</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-title">Dirección Físico:</td>
+                                        <td>AVENIDA PRINCIPAL H5 SAN JUAN, PR 00595</td>
+                                        <td class="table-title">Dirección Postal:</td>
+                                        <td>AVENIDA PRINCIPAL H5 SAN JUAN, PR 00595</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                    <!-- ./END Creditor Info Section -->
+
+                    <!-- Owner Information Section -->
+                    <section class="section client-info">
+                        <!-- section title -->
+                        <div class="section__title">
+                            <h6>Información del Nuevo Dueño Registral</h6>
+                        </div>
+                        <!-- section content -->
+                        <div class="section__content">
+                            <div class="row display-flex align-items-stretch">
+                                <div class="col-md-7 left-column">
+                                    <div class="section__field field">
+                                        <label for="client-name" class="input-name">Nombre:</label>
+                                        <input id="client-name" disabled="disabled" class="input input-xxs" type="text" value="Juan Del Pueblo Conocido">
+                                    </div>
+                                    <div class="section__field field">
+                                        <label for="client-name" class="input-name"></label>
+                                        <button class="button button-xxs section__edit-btn">Editar</button>
+                                    </div>
+                                    <div class="section__field field align-items-top">
+                                        <span class="input-name">Detalles:</span>
+                                        <div class="section__detail-box">
+                                            <div class="section__field field">
+                                                <label for="birth-date" class="input-name">Fecha Nacimiento:</label>
+                                                <input id="birth-date" class="input input-xxs plane-input as-datepicker" type="text" value="00/00/00">
+                                            </div>
+                                            <div class="section__field field">
+                                                <label for="cd-licence-number" class="input-name">Num Licencia:</label>
+                                                <input id="cd-licence-number" class="input input-xxs plane-input" type="text" value="451263">
+                                            </div>
+                                            <div class="section__field field">
+                                                <label for="client-phone" class="input-name">Teléfono:</label>
+                                                <input id="client-phone" class="input input-xxs plane-input" type="text" value="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-5 right-column">
+                                    <div class="section__field field align-items-flex-start">
+                                        <label for="client-address" class="input-name">Dirección Física:</label>
+                                        <textarea class="" id="client-address" name="" cols="30" rows="2"></textarea>
+                                    </div>
+                                    <div class="section__field field align-items-flex-start">
+                                        <label for="zip-address" class="input-name">Dirección Postal:</label>
+                                        <textarea class="" id="zip-address" name="" cols="30" rows="2"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+                    <!-- ./END Owner Information Section -->
+
+                    <!-- Transaction Info Section -->
+                    <section class="section transaction-info">
+                        <!-- section title -->
+                        <div class="section__title">
+                            <h6>Detalle de Transacción</h6>
+                        </div>
+                        <!-- section content -->
+                        <div class="section__content">
+                            <div class="row display-flex align-items-stretch">
+                                <div class="col-md-6 left-column">
+                                    <div class="section__field field">
+                                        <label for="case-number" class="input-name">Número de Caso:</label>
+                                        <input id="case-number" class="input input-xxs" type="text" value="20190410-0012">
+                                    </div>
+                                    <div class="section__field field">
+                                        <label for="transaction-type" class="input-name">Tipo:</label>
+                                        <input id="transaction-type" class="input input-xxs" type="text" value="Traspaso">
+                                    </div>
+                                    <div class="section__field field">
+                                        <label for="transaction-sub-type" class="input-name">Sub Tipo:</label>
+                                        <input id="transaction-sub-type" class="input input-xxs" type="text" value="Cuenta">
+                                    </div>
+                                    <div class="section__field field">
+                                        <label for="transfer-via" class="input-name">Medio de Compra:</label>
+                                        <input id="transfer-via" class="input input-xxs" type="text" value="Financiado">
+                                    </div>
+                                    <div class="section__field field">
+                                        <label for="contract-number" class="input-name">Número de Contrato:</label>
+                                        <input id="contract-number" class="input input-xxs" type="text" value="654789">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 right-column">
+                                    <div class="section__field field">
+                                        <label for="transaction-status" class="input-name">Estatus Actual:</label>
+                                        <input id="transaction-status" class="input input-xxs" type="text" value="Presentado">
+                                    </div>
+                                    <div class="section__field field">
+                                        <label for="transfer-signed-on" class="input-name">Juramentado el:</label>
+                                        <input id="transfer-signed-on" class="input input-xxs as-datepicker" type="text" value="00/00/00">
+                                    </div>
+                                    <div class="section__field field">
+                                        <label for="received-date" class="input-name">Recibido el:</label>
+                                        <input id="received-date" class="input input-xxs as-datepicker" type="text" value="00/00/00">
+                                    </div>
+                                    <div class="section__field field">
+                                        <label for="registered-date" class="input-name">Registrado en:</label>
+                                        <input id="registered-date" class="input input-xxs as-datepicker" type="text" value="00/00/00">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- ./END Transaction Info Section -->
+
+                    <!-- Vehicle Information Section -->
+                    <section class="section vehicle-info">
+                        <!-- section title -->
+                        <div class="section__title">
+                            <h6>Información del Vehículo</h6>
+                        </div>
+                        <!-- section content -->
+                        <div class="section__content">
+                            <table class="details-info-table">
+                                <tbody>
+                                    <tr>
+                                        <td><strong>VIN:</strong></td>
+                                        <td>KM8J33A44HU275633</td>
+                                        <td><strong>Año:</strong></td>
+                                        <td>2018</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Registración:</strong></td>
+                                        <td>11324567</td>
+                                        <td><strong>Marca:</strong></td>
+                                        <td>NISSAN</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Título:</strong></td>
+                                        <td>523641</td>
+                                        <td><strong>Modelo:</strong></td>
+                                        <td>Rogue</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Título Impreso:</strong></td>
+                                        <td>13-feb.-2012</td>
+                                        <td><strong>Color:</strong></td>
+                                        <td>Azul</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Tablilla:</strong></td>
+                                        <td>TBL002</td>
+                                        <td><strong>Cilindros:</strong></td>
+                                        <td>4</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Marbete:</strong></td>
+                                        <td>52369871</td>
+                                        <td><strong>País Procedencia:</strong></td>
+                                        <td>JP</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Expiración Marbete:</strong></td>
+                                        <td>13-feb.-2020</td>
+                                        <td><strong></strong></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                    <!-- ./END Vehicle Information Section -->
+
+                    <!-- Current Owner Information Section -->
+                    <section class="section current-owner-info">
+                        <!-- section title -->
+                        <div class="section__title">
+                            <h6>Información del Dueño Actual</h6>
+                        </div>
+                        <!-- section content -->
+                        <div class="section__content">
+                            <table class="details-info-table">
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Nombre:</strong></td>
+                                        <td>JUAN DEL PUEBLO</td>
+                                        <td><strong>Licencia:</strong></td>
+                                        <td>5412563</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Teléfono:</strong></td>
+                                        <td>(787) 444-5566</td>
+                                        <td><strong>Estatus:</strong></td>
+                                        <td>Valida</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Dirección Físico:</strong></td>
+                                        <td>AVENIDA PRINCIPAL H5 SAN JUAN, PR 00595</td>
+                                        <td><strong>Dirección Postal:</strong></td>
+                                        <td>Dirección Postal: AVENIDA PRINCIPAL H5 SAN JUAN, PR 00595</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                    <!-- ./END Current Owner Information Section -->
+
+                    <!-- Assessment Conditions Section -->
+                    <section class="section release-info">
+                        <!-- section title -->
+                        <div class="section__title">
+                            <h6>Gravamen DTOP</h6>
+                        </div>
+                        <!-- section content -->
+                        <div class="section__content">
+                            <table class="info-table-gray">
+                                <tr>
+                                    <th scope="col">Gravamen</th>
+                                    <th scope="col">Institución / Acreedor</th>
+                                    <th scope="col">Contrato</th>
+                                    <th scope="col">Comentarios</th>
+                                </tr>
+                                <tbody>
+                                    <tr>
+                                        <td>Mobiliario (Venta Condicional)</td>
+                                        <td>Popular Auto Inc</td>
+                                        <td>4589632</td>
+                                        <td>N/C</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                    <!-- ./END Assessment Conditions Section -->
+
+                    <!-- Current Assessments Section -->
+                    <section class="section release-info">
+                        <!-- section title -->
+                        <div class="section__title">
+                            <h6>Gravámenes en Proceso</h6>
+                        </div>
+                        <!-- section content -->
+                        <div class="section__content">
+                            <table class="info-table-gray current-assessments-table">
+                                <tr>
+                                    <th scope="col">Gravamen</th>
+                                    <th scope="col">Fecha</th>
+                                    <th scope="col">Fecha</th>
+                                </tr>
+                                <tbody>
+                                    <tr>
+                                        <td>ACAA</td>
+                                        <td>30/jun/2016</td>
+                                        <td>20160925-00122</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Hipoteca</td>
+                                        <td>2/ene/2015</td>
+                                        <td>20161014-42562</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                    <!-- ./END Current Assessments Section -->
+
+                    <!-- Fines Section -->
+                    <section class="section release-info">
+                        <!-- section title -->
+                        <div class="section__title">
+                            <h6>Multas</h6>
+                        </div>
+                        <!-- section content -->
+                        <div class="section__content">
+                            <table class="info-table-gray fines-table">
+                                <tr>
+                                    <th scope="col">Multa</th>
+                                    <th scope="col">Descripción</th>
+                                    <th scope="col">Municipio</th>
+                                    <th scope="col">Fecha</th>
+                                    <th scope="col">Costo</th>
+                                </tr>
+                                <tbody>
+                                    <tr>
+                                        <td>6542</td>
+                                        <td class="fine-description">Estacionado Acera</td>
+                                        <td>Aguada</td>
+                                        <td>18/08/2014</td>
+                                        <td>$75.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5451</td>
+                                        <td class="fine-description">No hizo PARE</td>
+                                        <td>Ponce</td>
+                                        <td>30/11/2016</td>
+                                        <td>$40.00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                    <!-- ./END Fines Section -->
+
+                    <!-- Assessment Conditions Section -->
+                    <section class="section release-info">
+                        <!-- section title -->
+                        <div class="section__title">
+                            <h6>Derechos en la Transacción</h6>
+                        </div>
+                        <!-- section content -->
+                        <div class="section__content">
+                            <table class="transaction-info-table">
+                                <tr>
+                                    <th scope="col" class="start-column">Número Autorización</th>
+                                    <th scope="col">Tipo Concepto</th>
+                                    <th scope="col" class="center-column">Fecha</th>
+                                    <th scope="col">Cantidad</th>
+                                    <th scope="col" class="end-column">Número de Sello y/o Comprobante</th>
+                                </tr>
+                                <tbody>
+                                    <tr>
+                                        <td></td>
+                                        <td>5120</td>
+                                        <td>18/abr/2019 09:48am</td>
+                                        <td>$11.00</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>0842</td>
+                                        <td>18/abr/2019 09:48am</td>
+                                        <td>$2.00</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td class="transaction-total">Total</td>
+                                        <td>$13</td>
+                                        <td></td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </section>
+                    <!-- ./END Assessment Conditions Section -->
+
+                    <!-- Documents Section -->
+                    <section class="section release-info">
+                        <!-- section title -->
+                        <div class="section__title">
+                            <h6>Gravámenes en Proceso</h6>
+                        </div>
+                        <!-- section content -->
+                        <div class="section__content">
+                            <table class="documents-table">
+                                <tr>
+                                    <th scope="col">Nombre</th>
+                                    <th scope="col">Categoría</th>
+                                    <th scope="col" class="action-column">Acción</th>
+                                </tr>
+                                <tbody>
+                                    <tr>
+                                        <td>ID_Braulio.pdf</td>
+                                        <td>ID del Comprador</td>
+                                        <td>
+                                            <a href="#" class="document-link" target="_blank">
+                                                <button type="button" class="button button-xxs open-document"></button>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gravamen_Braulio.pdf</td>
+                                        <td>Confirmación DTOP-770 (Firmada)</td>
+                                        <td>
+                                            <a href="#" class="document-link" target="_blank">
+                                                <button type="button" class="button button-xxs open-document"></button>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Titulo_Braulio.pdf</td>
+                                        <td>Título del Vehículo</td>
+                                        <td>
+                                            <a href="#" class="document-link" target="_blank">
+                                                <button type="button" class="button button-xxs open-document"></button>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                    <!-- ./END Documents Section -->
+
+                    <!-- History Section -->
+                    <section class="section release-info">
+                        <!-- section title -->
+                        <div class="section__title">
+                            <h6>Historial</h6>
+                        </div>
+                        <!-- section content -->
+                        <div class="section__content">
+                            <table class="history-table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" class="follow-up">Seguimiento</th>
+                                        <th scope="col">Usuario</th>
+                                        <th scope="col">Proceso Realizado</th>
+                                        <th scope="col">Fecha</th>
+                                        <th scope="col">Comentario</th>
+                                        <th scope="col">Estatus</th>
+                                    </tr>
+                                    <tr class="table-filter">
+                                        <td>
+                                            <div class="field">
+                                                <label class="select select-xxs" for="show-filter">
+                                                    <select id="show-filter">
+                                                        <option value="1">Todos</option>
+                                                        <option value="2">Ninguno</option>
+                                                    </select>
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="field">
+                                                <input id="user-name" class="input input-xxs" type="text" value="">
+                                            </div>
+                                        </td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>
+                                            <div class="field">
+                                                <label class="select select-xxs" for="status-filter">
+                                                    <select id="status-filter">
+                                                        <option value="1">Todos</option>
+                                                        <option value="2">Ninguno</option>
+                                                    </select>
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td></td>
+                                        <td>Teresita Herrero</td>
+                                        <td>Usuario Asignado</td>
+                                        <td>18/abr/2019 09:48am</td>
+                                        <td>Asignación automática</td>
+                                        <td>Presentado</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>Teresita Herrero</td>
+                                        <td>Usuario Asignado</td>
+                                        <td>18/abr/2019 09:48am</td>
+                                        <td>Asignación automática</td>
+                                        <td>Presentado</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>Teresita Herrero</td>
+                                        <td>Usuario Asignado</td>
+                                        <td>18/abr/2019 09:48am</td>
+                                        <td>Asignación automática</td>
+                                        <td>Presentado</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                    <!-- ./END History Section -->
+
+                    <!-- submit section -->
+                    <section class="section submit-form">
+                        <div class="section__content no-padding-top">
+                            <button type="submit" class="button button-xxs">Editar Caso</button>
+                            <button type="submit" class="button button-xxs">Manejar Caso</button>
+                        </div>
+                    </section>
+                    <!-- ./END Submit -->
+                </form>
+                <!--./END form -->
+            </div>
+        </main>
+        <!-- ./END Main Content -->
+
+        <!-- Libraries Script -->
+        <script src="js/libs.js"></script>
 
         <!-- Custom Script -->
         <script src="js/script.js"></script>

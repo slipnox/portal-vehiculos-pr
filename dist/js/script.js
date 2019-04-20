@@ -94,12 +94,12 @@
 /***/ (function(module, exports) {
 
 (function ($) {
-  // swear agreement
-  $('#agree-date, #birth-date').each(function (i, input) {
+  // add datepicker for date inputs
+  $('.as-datepicker').each(function (i, input) {
     $(input).datepicker({
       language: 'es'
     });
-  }); // edit btn action
+  }); // edit name btn action callback
 
   $('.section__edit-btn').on('click', function (e) {
     $('#client-name').prop('disabled', false);
