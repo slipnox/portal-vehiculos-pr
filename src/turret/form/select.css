@@ -123,7 +123,8 @@ select {
     pointer-events: none;
     border-left: var(--select-arrow-size) solid transparent;
     border-right: var(--select-arrow-size) solid transparent;
-    border-top: var(--select-arrow-size) solid var(--select-arrow-background);
+    border-top: var(--select-arrow-size) solid #868686;
+    //border-top: var(--select-arrow-size) solid var(--select-arrow-background);
   }
 }
 

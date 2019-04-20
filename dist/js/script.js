@@ -95,8 +95,20 @@
 
 (function ($) {
   // swear agreement
-  $('#agree-date').datepicker({
-    language: 'es'
+  $('#agree-date, #birth-date').each(function (i, input) {
+    $(input).datepicker({
+      language: 'es'
+    });
+  }); // edit btn action
+
+  $('.section__edit-btn').on('click', function (e) {
+    $('#client-name').prop('disabled', false);
+    $(e.target).prop('disabled', true);
+    alert('Edit Callback');
+  }); // find licence callback
+
+  $('.find-licence').on('click', function (e) {
+    alert('Find Licence Callback');
   });
 })(jQuery);
 

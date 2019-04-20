@@ -35,6 +35,10 @@
     flex 1
     margin 0
 
+.section__edit-btn
+  max-width 95px
+  margin-right 100px
+
 .transfer-via .section__field .select,
 .transfer-via .section__field .vertical-inputs,
 .transfer-via .section__field .input
@@ -76,3 +80,101 @@
 .calendar-icon
   max-height 28px
   padding: 3px 5px
+
+.section__detail-box
+  flex 2
+  padding 15px
+  background #fff
+  border solid 1px #d8d8d8
+
+.client-info .right-column .section__detail-box
+  flex 1
+  width 195px
+  padding 5px
+
+.client-info .right-column .section__field:last-child
+  padding-top 10px
+
+.client-info .right-column .section__detail-box textarea
+  width 100%
+
+.find-licence:focus,
+.find-licence:hover,
+.find-licence
+  display block
+  margin-right -28px
+  width 40px
+  flex 0
+  border none
+  background transparent url("/images/loupe.svg") no-repeat
+  background-size 18px
+  background-position center
+  z-index 10
+
+#zip-address,
+#client-address
+  font-size 12px
+
+.boxes
+  display: grid
+  grid-gap: 1rem
+  grid-template-columns: repeat(auto-fill,minmax(15rem,1fr))
+
+
+.transaction-rights-table,
+.transaction-rights-table td,
+.transaction-rights-table th,
+.dealer-info-table,
+.dealer-info-table td,
+.dealer-info-table th,
+.car-info, .car-info td, .car-info th
+  background transparent
+  border none
+
+.transaction-rights-table td,
+.transaction-rights-table th,
+.release-info-table td,
+.release-info-table th,
+.dealer-info-table td,
+.car-info td
+  width 25%
+  padding 5px 0
+  font-size 13px
+
+.dealer-info-table td
+  vertical-align top
+
+.transaction-rights-table
+  max-width 75%
+  margin 0 auto
+
+.transaction-rights-table td,
+.transaction-rights-table th,
+.release-info-table td,
+.release-info-table th
+  padding 8px
+
+.transaction-rights-table > tbody th,
+.release-info-table th
+  font-weight:500
+
+.transaction-rights-table th,
+.transaction-rights-table td,
+.release-info-table td
+  text-align center
+
+.transaction-rights-table > tbody td,
+.transaction-rights-table > tbody th
+  background #fff
+  border solid 1px #d8d8d8
+
+.transaction-rights-table > tbody th
+  background #f8f9fa
+
+.transaction-rights-table tfoot
+  font-weight 500
+
+.transaction-rights-table td.transaction-total
+  text-align right
+  text-transform uppercase
+  line-height 24px

@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>traspaso-3.html</title>
+    <title>Traspaso 3</title>
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/libs.css">
@@ -13,7 +13,276 @@
 </head>
 <body>
 
-<h1>traspaso-3.html</h1>
+<!-- Main Content -->
+<main class="pv-container">
+    <div class="container no-padding">
+        <!-- section form -->
+        <form class="form-inline" action="#">
+            <!-- Owner Information Section -->
+            <section class="section client-info">
+                <!-- section title -->
+                <div class="section__title">
+                    <h6>Información del Nuevo Dueño Registral</h6>
+                </div>
+                <!-- section content -->
+                <div class="section__content">
+                    <div class="row display-flex align-items-stretch">
+                        <div class="col-md-7 left-column">
+                            <div class="section__field field">
+                                <span class="input-name">Realizar búsqueda de dueño por:</span>
+                                <label class="select select-xxs" for="licence-number">
+                                    <select id="licence-number">
+                                        <option>Seleccione</option>
+                                        <option value="1">Número Licencia</option>
+                                        <option value="2">Número Licencia</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div class="section__field field">
+                                <label for="client-name" class="input-name">Nombre:</label>
+                                <input id="client-name" disabled class="input input-xxs" type="text" value="Juan Del Pueblo Conocido">
+                            </div>
+                            <div class="section__field field">
+                                <label for="client-name" class="input-name"></label>
+                                <button class="button button-xxs section__edit-btn">Editar</button>
+                            </div>
+                            <div class="section__field field align-items-top">
+                                <span class="input-name">Detalles:</span>
+                                <div class="section__detail-box">
+                                    <div class="section__field field">
+                                        <label for="birth-date" class="input-name">Fecha Nacimiento:</label>
+                                        <input id="birth-date" class="input input-xxs" type="text" value="00/00/00">
+                                    </div>
+                                    <div class="section__field field">
+                                        <label for="cd-licence-number" class="input-name">Num Licencia:</label>
+                                        <input id="cd-licence-number" class="input input-xxs" type="text" value="451263">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5 right-column">
+                            <div class="section__field field">
+                                <label for="search-board-id" class="input-name">El número de <strong>Licencia</strong>:</label>
+                                <input id="search-board-id" class="input input-xxs" type="text" value="451263">
+                                <button class="button button-xxs find-licence"></button>
+                            </div>
+                            <div class="section__field field align-items-flex-start">
+                                <label for="client-address" class="input-name">Dirección Física:</label>
+                                <textarea class="" id="client-address" name="" cols="30" rows="2"></textarea>
+                            </div>
+                            <div class="section__field field align-items-flex-start">
+                                <label for="zip-address" class="input-name">Dirección Postal:</label>
+                                <textarea class="" id="zip-address" name="" cols="30" rows="2"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <!-- ./END Owner Information Section -->
+
+            <!-- Dealer Information Section -->
+            <section class="section dealer-info">
+                <!-- section title -->
+                <div class="section__title">
+                    <h6>Información del Concesionario</h6>
+                </div>
+                <!-- section content -->
+                <div class="section__content">
+                    <div class="row display-flex align-items-stretch">
+                        <div class="col-md-6 left-column">
+                            <div class="section__field field">
+                                <label for="dealer-licence-number" class="input-name">Número Licencia:</label>
+                                <input id="dealer-licence-number" class="input input-xxs" type="text" value="SA0122">
+                                <button class="button button-xxs find-licence"></button>
+                            </div>
+                            <div class="section__field field">
+                                <label for="dealer-name" class="input-name">Concesionario:</label>
+                                <input id="dealer-name" class="input input-xxs" type="text" value="LEXUS">
+                            </div>
+                            <div class="section__field field">
+                                <label for="dealer-location" class="input-name">Localización:</label>
+                                <input id="dealer-location" class="input input-xxs" type="text"
+                                       value="SAN JUAN (SA0122)">
+                            </div>
+                        </div>
+                        <div class="col-md-6 right-column">
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <!-- ./END Dealer Information Section -->
+
+            <!-- Vehicle Information Section -->
+            <section class="section vehicle-info">
+                <!-- section title -->
+                <div class="section__title">
+                    <h6>Información del Vehículo</h6>
+                </div>
+                <!-- section content -->
+                <div class="section__content">
+                    <table class="car-info">
+                        <tbody>
+                        <tr>
+                            <td><strong>VIN:</strong></td>
+                            <td>KM8J33A44HU275633</td>
+                            <td><strong>Año:</strong></td>
+                            <td>2018</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Registración:</strong></td>
+                            <td>11324567</td>
+                            <td><strong>Marca:</strong></td>
+                            <td>NISSAN</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Título:</strong></td>
+                            <td>523641</td>
+                            <td><strong>Modelo:</strong></td>
+                            <td>Rogue</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Título Impreso:</strong></td>
+                            <td>13-feb.-2012</td>
+                            <td><strong>Color:</strong></td>
+                            <td>Azul</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Tablilla:</strong></td>
+                            <td>TBL002</td>
+                            <td><strong>Cilindros:</strong></td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Marbete:</strong></td>
+                            <td>52369871</td>
+                            <td><strong>País Procedencia:</strong></td>
+                            <td>JP</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Expiración Marbete:</strong></td>
+                            <td>13-feb.-2020</td>
+                            <td><strong></strong></td>
+                            <td></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <!-- ./END Vehicle Information Section -->
+
+            <!-- Current Owner Information Section -->
+            <section class="section current-owner-info">
+                <!-- section title -->
+                <div class="section__title">
+                    <h6>Información del Dueño Actual</h6>
+                </div>
+                <!-- section content -->
+                <div class="section__content">
+                    <table class="dealer-info-table">
+                        <tbody>
+                        <tr>
+                            <td><strong>Nombre:</strong></td>
+                            <td>JUAN DEL PUEBLO</td>
+                            <td><strong>Licencia:</strong></td>
+                            <td>5412563</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Teléfono:</strong></td>
+                            <td>(787) 444-5566</td>
+                            <td><strong>Estatus:</strong></td>
+                            <td>Valida</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Dirección Físico:</strong></td>
+                            <td>AVENIDA PRINCIPAL H5 SAN JUAN, PR 00595</td>
+                            <td><strong>Dirección Postal:</strong></td>
+                            <td>Dirección Postal:	AVENIDA PRINCIPAL H5 SAN JUAN, PR 00595</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <!-- ./END Current Owner Information Section -->
+
+            <!-- Release Conditions Section -->
+            <section class="section release-info">
+                <!-- section title -->
+                <div class="section__title">
+                    <h6>Liberación de Gravamen</h6>
+                </div>
+                <!-- section content -->
+                <div class="section__content">
+                    <table class="release-info-table">
+                        <tr>
+                            <th scope="col">Gravamen</th>
+                            <th scope="col">Institución / Acreedor</th>
+                            <th scope="col">Contrato</th>
+                            <th scope="col">Comentarios</th>
+                        </tr>
+                        <tbody>
+                        <tr>
+                            <td>Mobiliario (Venta Condicional)</td>
+                            <td>Popular Auto Inc</td>
+                            <td>4589632</td>
+                            <td>N/C</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <!-- ./END Release Conditions Section -->
+
+            <!-- Transaction Rights Section -->
+            <section class="section transaction-rights-info">
+                <!-- section title -->
+                <div class="section__title">
+                    <h6>Liberación de Gravamen</h6>
+                </div>
+                <!-- section content -->
+                <div class="section__content">
+                    <table class="transaction-rights-table">
+                        <tr>
+                            <th scope="col">Cantidad</th>
+                            <th scope="col">Tipo Concepto</th>
+                            <th scope="col">Contrato</th>
+                            <th scope="col">Costo</th>
+                        </tr>
+                        <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>5120</td>
+                            <td>18/abr/2019 09:48 am</td>
+                            <td>$ 11.00</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>0842</td>
+                            <td>18/abr/2019 09:48 am</td>
+                            <td>$ 2.00</td>
+                        </tr>
+                        <tfoot>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td class="transaction-total">Total</td>
+                            <td>$180</td>
+                        </tr>
+                        </tfoot>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <!-- ./END Transaction Rights Section -->
+        </form>
+        <!--./END form -->
+    </div>
+</main>
+<!-- ./END Main Content -->
+
+<!-- Libraries Scripts -->
+<script src="js/libs.js"></script>
 
 <!-- Custom Script -->
 <script src="js/script.js"></script>
