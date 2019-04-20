@@ -23,7 +23,7 @@ function createFiles (filename) {
   fs.access(path, fs.F_OK, (err) => {
     if (err) {
 
-      fs.readFile('./src/bootstrap.html', 'utf8', function (err, data) {
+      fs.readFile(__dirname + '/template/bootstrap.html', 'utf8', function (err, data) {
         let htmlContent = data.replace(/{{fileName}}/g, filename)
         fs.writeFile(path, htmlContent, err => {
           err ? console.log(err) : false

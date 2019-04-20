@@ -1,7 +1,7 @@
 let mix = require('laravel-mix')
 let HtmlWebpackPlugin = require('html-webpack-plugin')
 let HtmlBeautifyPlugin = require('html-beautify-webpack-plugin')
-let fileGenerator = require('./modules/file-generator')
+let fileGenerator = require('./modules/sx-form-generator/file-generator')
 
 //Disable Mix Manifest
 Mix.manifest.refresh = _ => void 0

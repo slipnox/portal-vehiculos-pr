@@ -12,13 +12,13 @@
   padding: 5px 15px;
 }
 .section__content {
-  padding: 30px 80px;
+  padding: 30px 8%;
 }
 .section__field {
   display: flex;
   flex-flow: row;
   align-items: center;
-  margin: 0 0 12px 0;
+  margin: 0 0 10px 0;
 }
 .section__field .input-name {
   font-size: 13px;
@@ -34,6 +34,9 @@
 .section__field > * {
   flex: 1;
   margin: 0;
+}
+.table-title {
+  font-weight: 600;
 }
 .section__edit-btn {
   max-width: 95px;
@@ -89,6 +92,9 @@
   background: #fff;
   border: solid 1px #d8d8d8;
 }
+.section__detail-box .section__field {
+  margin-bottom: 4px;
+}
 .client-info .right-column .section__detail-box {
   flex: 1;
   width: 195px;
@@ -100,6 +106,9 @@
 .client-info .right-column .section__detail-box textarea {
   width: 100%;
 }
+.open-document:focus,
+.open-document:hover,
+.open-document,
 .find-licence:focus,
 .find-licence:hover,
 .find-licence {
@@ -117,70 +126,160 @@
 #client-address {
   font-size: 12px;
 }
+.plane-input {
+  border: none;
+  border-bottom: solid 1px #ddd;
+}
 .boxes {
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
 }
-.transaction-rights-table,
-.transaction-rights-table td,
-.transaction-rights-table th,
-.dealer-info-table,
-.dealer-info-table td,
-.dealer-info-table th,
-.car-info,
-.car-info td,
-.car-info th {
+.transaction-info-table,
+.transaction-info-table td,
+.transaction-info-table th,
+.details-info-table,
+.details-info-table td,
+.details-info-table th {
   background: transparent;
   border: none;
 }
-.transaction-rights-table td,
-.transaction-rights-table th,
-.release-info-table td,
-.release-info-table th,
-.dealer-info-table td,
-.car-info td {
+.transaction-info-table td,
+.transaction-info-table th,
+.info-table-gray td,
+.info-table-gray th,
+.details-info-table td {
   width: 25%;
   padding: 5px 0;
-  font-size: 13px;
+  font-size: 12px;
 }
-.dealer-info-table td {
+.details-info-table td {
   vertical-align: top;
 }
-.transaction-rights-table {
+.transaction-info-table {
   max-width: 75%;
   margin: 0 auto;
 }
-.transaction-rights-table td,
-.transaction-rights-table th,
-.release-info-table td,
-.release-info-table th {
+.transaction-info-table td,
+.transaction-info-table th,
+.info-table-gray td,
+.info-table-gray th {
   padding: 8px;
 }
-.transaction-rights-table > tbody th,
-.release-info-table th {
+.transaction-info-table > tbody th,
+.info-table-gray th {
   font-weight: 500;
 }
-.transaction-rights-table th,
-.transaction-rights-table td,
-.release-info-table td {
+.transaction-info-table th,
+.transaction-info-table td,
+.info-table-gray td {
   text-align: center;
 }
-.transaction-rights-table > tbody td,
-.transaction-rights-table > tbody th {
+.transaction-info-table > tbody td,
+.transaction-info-table > tbody th {
   background: #fff;
   border: solid 1px #d8d8d8;
 }
-.transaction-rights-table > tbody th {
+.transaction-info-table > tbody th {
   background: #f8f9fa;
 }
-.transaction-rights-table tfoot {
+.transaction-info-table tfoot {
   font-weight: 500;
 }
-.transaction-rights-table td.transaction-total {
+.transaction-info-table td.transaction-total {
   text-align: right;
   text-transform: uppercase;
   line-height: 24px;
+}
+.f6 .transaction-info .section__field {
+  margin-bottom: 6px;
+}
+.f6 .transaction-info .section__field .select,
+.f6 .transaction-info .section__field .vertical-inputs,
+.f6 .transaction-info .section__field .input {
+  min-width: 220px;
+}
+.current-assessments-table {
+  max-width: 70%;
+  margin: 0 auto;
+}
+.fines-table {
+  width: 85%;
+  margin: 0 auto;
+}
+.fines-table th,
+.fines-table td {
+  width: 17.5%;
+}
+.documents-table th,
+.fines-table th {
+  text-align: center;
+}
+.fines-table .fine-description {
+  text-align: left;
+  width: 30%;
+}
+.f6 .transaction-info-table {
+  max-width: 100%;
+}
+.f6 .transaction-info-table td,
+.f6 .transaction-info-table th {
+  width: 10%;
+}
+.f6 .transaction-info-table .end-column,
+.f6 .transaction-info-table .start-column {
+  width: 20%;
+}
+.f6 .transaction-info-table .center-column {
+  width: 15%;
+}
+.history-table td,
+.documents-table td {
+  text-align: left;
+  padding: 2px 8px;
+}
+.history-table th,
+.documents-table th {
+  padding: 8px 8px;
+}
+.open-document:focus,
+.open-document:hover,
+.open-document {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+  margin: 0 auto;
+}
+.documents-table th {
+  width: auto;
+  font-weight: 500;
+}
+.f6 .documents-table .action-column {
+  width: 12%;
+}
+.history-table,
+.documents-table {
+  font-size: 12px;
+}
+.f6 .documents-table .document-link {
+  width: 100%;
+  text-align: center;
+  display: block;
+}
+.history-table .table-filter td {
+  border: none;
+  background: #f3f5f6;
+}
+.history-table th {
+  max-width: 16.6%;
+}
+.follow-up {
+  width: 13%;
+}
+.f6 .submit-form {
+  text-align: right;
 }
 .select-xxs select,
 select.select-xxs {
