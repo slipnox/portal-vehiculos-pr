@@ -12,7 +12,7 @@
   padding 5px 15px
 
 .section__content
-  padding 30px 8%
+  padding 15px 8%
 
 .section__field
   display flex
@@ -140,61 +140,9 @@
   grid-template-columns: repeat(auto-fill,minmax(15rem,1fr))
 
 
-.transaction-info-table,
-.transaction-info-table td,
-.transaction-info-table th,
-.details-info-table,
-.details-info-table td,
-.details-info-table th
-  background transparent
-  border none
-
-.transaction-info-table td,
-.transaction-info-table th,
-.info-table-gray td,
-.info-table-gray th,
-.details-info-table td
-  width 25%
-  padding 5px 8px
-  font-size 12px
-
-.details-info-table td
-  vertical-align top
-
 .transaction-info-table
   max-width 75%
   margin 0 auto
-
-.transaction-info-table td,
-.transaction-info-table th,
-.info-table-gray td,
-.info-table-gray th
-  padding 8px
-
-.transaction-info-table > tbody th,
-.info-table-gray th
-  font-weight:500
-
-.transaction-info-table th,
-.transaction-info-table td,
-.info-table-gray td
-  text-align center
-
-.transaction-info-table > tbody td,
-.transaction-info-table > tbody th
-  background #fff
-  border solid 1px #d8d8d8
-
-.transaction-info-table > tbody th
-  background #f8f9fa
-
-.transaction-info-table tfoot
-  font-weight 500
-
-.transaction-info-table td.transaction-total
-  text-align right
-  text-transform uppercase
-  line-height 24px
 
 .f6 .transaction-info .section__field
   margin-bottom 6px
@@ -204,83 +152,154 @@
 .f6 .transaction-info .section__field .input
   min-width 220px
 
-.current-assessments-table
-  max-width 70%
-  margin 0 auto
-
-.fines-table
-  width 85%
-  margin 0 auto
-
-.fines-table th,
-.fines-table td
-  width 17.5%
-
-.documents-table th,
-.fines-table th
-  text-align center
-
-.fines-table .fine-description
-  text-align left
-  width 30%
-
-.f6 .transaction-info-table
-  max-width 100%
-
-.f6 .transaction-info-table td,
-.f6 .transaction-info-table th
-  width 10%
-
-.f6 .transaction-info-table .end-column,
-.f6 .transaction-info-table .start-column
-  width 20%
-
-.f6 .transaction-info-table .center-column
-  width 15%
-
-.history-table td
-.documents-table td
-  text-align left
-  padding 2px 8px
-
-.history-table th,
-.documents-table th
-  padding 8px 8px
-
 .open-document:focus,
 .open-document:hover,
 .open-document
   width 20px
-  height 20px
+  height 18px
   padding 0
   transform scaleX(-1)
   margin 0 auto
 
-.documents-table th
-  width auto
-  font-weight 500
-
-.f6 .documents-table .action-column
-  width 12%
-
-.history-table,
-.documents-table
-  font-size 12px
-
-.f6 .documents-table .document-link
-  width 100%
-  text-align center
-  display block
-
-.history-table .table-filter td
-  border none
-  background #f3f5f6
-
-.history-table th
-  max-width 16.6%
-
-.follow-up
-  width: 13%;
-
 .f6 .submit-form
   text-align right
+
+//General Tables
+.pv-table
+  margin 0 auto
+  display table
+  width 100%
+  font-size 12px
+  border 1px solid #d8d8d8
+
+.pv-table-row
+  display table-row
+
+.pv-table-heading
+  display table-header-group
+  font-weight bold
+  font-size: 11px;
+
+.pv-table-cell, .pv-table-head
+  display table-cell
+  padding 8px 10px
+
+.pv-table-heading .pv-table-cell:not(:last-child),
+.pv-table-head:not(:last-child),
+.pv-table-cell:not(:last-child)
+  border-right 1px solid #d8d8d8
+
+.pv-table-head,
+.pv-table-heading .pv-table-cell,
+.pv-table-row:not(:last-child) .pv-table-cell
+  border-bottom 1px solid #d8d8d8
+
+.pv-table-body
+  display table-row-group
+
+.pv-table-foot .pv-table-cell
+  border-top solid 1px #d8d8d8
+  background transparent
+
+.pv-table-foot
+  font-size 14px
+  font-weight bold
+
+.pv-table-foot .pv-table-cell
+  border-right none
+
+.transaction-rights-info .pv-table
+  width 60%
+
+.current-assessments .pv-table
+  width 80%
+
+.fines-info .pv-table
+  width 75%
+
+//CUSTOM TABLES
+
+// Details Table
+.pv-table.pv-details-table,
+.pv-table.pv-details-table .pv-table-cell
+  border:none
+
+.pv-details-table .pv-table-cell,
+.pv-details-table .pv-table-head
+  padding 8px 10px 8px 0
+
+.pv-table.pv-details-table .pv-table-cell
+  width 25%
+
+.pv-table.pv-details-table .pv-table-cell:nth-child(odd)
+  font-weight bold
+
+// Zebra Table
+.pv-zebra-table .pv-table-cell:not(:first-child),
+.pv-zebra-table .pv-table-heading .pv-table-head
+  text-align: center;
+
+.pv-table.pv-zebra-table
+  .pv-table-head
+    padding 6px 8px
+
+.pv-table.pv-zebra-table
+  .pv-table-cell
+    padding 10px 8px
+
+.pv-table.pv-zebra-table
+  .pv-table-row:nth-child(even)
+    background #fff
+
+.pv-table.pv-zebra-table
+  .pv-table-row:nth-child(odd)
+    background #f8f8f8
+
+.pv-table.pv-zebra-table
+  .pv-table-foot
+    .pv-table-row:nth-child(odd)
+      background transparent
+
+.pv-table.pv-zebra-table
+  .pv-table-head
+    background rgb(243,243,243)
+    background -moz-linear-gradient(top, rgba(243,243,243,1) 0%, rgba(255,255,255,1) 100%)
+    background -webkit-linear-gradient(top, rgba(243,243,243,1) 0%,rgba(255,255,255,1) 100%)
+    background linear-gradient(to bottom, rgba(243,243,243,1) 0%,rgba(255,255,255,1) 100%)
+
+.pv-table.pv-zebra-table
+  .pv-table-foot
+    border-top solid 1px #d8d8d8
+    display: table-row-group
+    background transparent
+
+.pv-table.pv-zebra-table
+  .pv-table-heading
+    .pv-table-cell
+      border-bottom none
+
+.pv-table.pv-zebra-table
+  .pv-table-row:not(:last-child)
+    .pv-table-cell
+      border-bottom none
+
+// Zebra Table Narrow
+.pv-table.pv-zebra-table.narrow
+  .pv-table-head,
+  .pv-table-cell
+    padding 4px 8px
+
+.pv-table.pv-zebra-table.narrow
+  .pv-table-heading
+    .pv-table-cell
+      padding: 2px 2px
+
+.pv-table.pv-zebra-table.narrow.documents
+  .pv-table-body
+    .pv-table-cell:last-child
+      padding 2px 0 0
+
+.transaction-rights-info
+  .pv-table
+    .pv-table-cell:last-child
+      text-align right
