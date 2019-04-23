@@ -40,3 +40,43 @@
 .pointer {
   cursor: pointer;
 }
+
+.tw-10 {
+  width: 10%;
+}
+
+.tw-20 {
+  width: 20%;
+}
+
+.tw-30 {
+  width: 30%;
+}
+
+.tw-40 {
+  width: 40%;
+}
+
+.tw-50 {
+  width: 50%;
+}
+
+.tw-60 {
+  width: 60%;
+}
+
+.tw-70 {
+  width: 70%;
+}
+
+.tw-80 {
+  width: 80%;
+}
+
+.tw-90 {
+  width: 90%;
+}
+
+.tw-100 {
+  width: 100%;
+}
